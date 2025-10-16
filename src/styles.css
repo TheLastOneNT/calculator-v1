@@ -1,0 +1,11 @@
+:root { font-family: system-ui, sans-serif; }
+* { box-sizing: border-box; }
+body { margin: 0; display: grid; place-items: center; min-height: 100vh; background: #0e0e0e; color: #fff; }
+.app { width: 320px; background: #111; border-radius: 16px; padding: 16px; box-shadow: 0 10px 40px rgba(0,0,0,.4); }
+.display { font-size: 2.5rem; text-align: right; padding: 16px; background: #1a1a1a; border-radius: 12px; margin-bottom: 12px; min-height: 64px; }
+.keys { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+button { padding: 14px; border: none; border-radius: 12px; background: #222; color: #fff; font-size: 1.1rem; cursor: pointer; }
+button:hover { filter: brightness(1.1); }
+button[data-op], button[data-action="equals"] { background: #b22222; }
+.zero { grid-column: span 2; }
+.sr-only { position: absolute; left: -9999px; }
